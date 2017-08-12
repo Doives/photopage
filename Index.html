@@ -1,0 +1,394 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+  <title> My Photo Feed </title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css?v0.5">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+    <body>
+      <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <span class="brand">Helberg Photography</span>
+              </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <p class="navbar-btn">
+                  <a href="#" class="btn btn-success" data-toggle="modal" data-target="#new-post-modal">Create a new post</a>
+                </p>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-cog" aria-hidden="true"></i> <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Log Out</a></li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+      </nav>
+      <div class="main container-fluid">
+          <nav class="view-options row">
+                <div class="col-md-12 text-center">
+                  <ul class="nav nav-pills">
+                    <li role="presentation" class="active">
+                      <a href="#three-col" data-toggle="tab" aria-controls="three-col">
+                        <i class="fa fa-th" aria-hidden="true">
+                        </i>
+                      </a>
+                    </li>
+                    </li>
+                      <li role="presentation">
+                        <a href="#one-col" data-toggle="tab" aria-controls="one-col">
+                          <i class="fa fa-square" aria-hidden="true"></i>
+                        </a> 
+                      </li>
+                  </ul>
+                </div>
+      </nav>
+      </div>
+    <div class="">
+      <div class="allphotos tab-content">
+          <div role="tabpanel" class="tab-pane active" id="one-col">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
+                <article class="article-one-row">
+                  <header class="theheader">
+                    <h2 class="title_container">First picture</h2>
+                    <div class="date_container">04.12</div>
+                  </header>
+                  <div class="image_container">
+                      <div style="background-image: url('https://aos.iacpublishinglabs.com/question/aq/1400px-788px/parrot-s-predators_9be0e73cf7e7b722.jpg?domain=cx.aos.ask.com');"></div>
+                  </div>
+                  <p class="likes">23 Likes</p>
+                    <div class="row">
+                        <div class="col-xs-1">
+                          <a href="#">
+                            <i class="glyphicon glyphicon-heart-empty"></i>
+                          </a>
+                        </div>
+                        <div class="col-xs-10">
+                          <input type="text" class="form-control no borde" id="comment" placeholder="comment...">
+                        </div>
+                        <div class="col-xs-1">
+                          <a href="#">
+                            <i class="glyphicon glyphicon-option-vertical">
+                            </i>
+                          </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-one-row">
+                  <header class="theheader">
+                    <h2 class="title_container">Second picture</h2>
+                    <div class="date_container">04.12</div>
+                  </header>
+                  <div class="image_container">
+                      <div style="background-image: url('https://www.pets4homes.co.uk/images/articles/2791/large/cockatoos-the-most-affectionate-parrots-on-the-planet-5536132ba815c.jpg');"></div>
+                  </div>
+                  <p class="likes">23 Likes</p>
+                                    <div class="row">
+                      <div class="col-xs-1">
+                        <a href="#">
+                          <i class="glyphicon glyphicon-heart-empty"></i>
+                        </a>
+                      </div>
+                        <div class="col-xs-10">
+                          <input type="text" class="form-control no borde" id="comment" placeholder="comment...">
+                        </div>
+                        <div class="col-xs-1">
+                          <a href="#">
+                            <i class="glyphicon glyphicon-option-vertical">
+                            </i>
+                            </a>
+                          </div>
+                    </div>
+                </article>
+                <article class="article-one-row">
+                  <header class="theheader">
+                    <h2 class="title_container">Third picture</h2>
+                    <div class="date_container">04.12</div>
+                  </header>
+                  <div class="image_container">
+                      <div style="background-image: url('https://ruthelsesser.files.wordpress.com/2013/02/parrot.jpg');"></div>
+                  </div>
+                  <p class="likes">23 Likes</p>
+                      <div class="row">
+                      <div class="col-xs-1">
+                        <a href="#">
+                          <i class="glyphicon glyphicon-heart-empty"></i>
+                        </a>
+                       </div>
+                        <div class="col-xs-10">
+                          <input type="text" class="form-control no borde" id="comment" placeholder="comment...">
+                        </div>
+                        <div class="col-xs-1">
+                          <a href="#">
+                            <i class="glyphicon glyphicon-option-vertical">
+                            </i>
+                            </a>
+                          </div>
+                    </div>
+                </article>
+                <article class="article-one-row">
+                  <header class="theheader">
+                    <h2 class="title_container">Third picture</h2>
+                    <div class="date_container">04.12</div>
+                  </header>
+                  <div class="image_container">
+                      <div style="background-image: url('https://fthmb.tqn.com/T-yOEOVKzilRwQAoGjUti4FsJRA=/960x0/filters:no_upscale()/about/close-up-of-scarlet-macaws-perching-on-rock-688089425-588f826a5f9b5874ee2df78d.jpg');"></div>
+                  </div>
+                  <p class="likes">23 Likes</p>
+                      <div class="row">
+                      <div class="col-xs-1">
+                        <a href="#">
+                          <i class="glyphicon glyphicon-heart-empty"></i>
+                        </a>
+                       </div>
+                        <div class="col-xs-10">
+                          <input type="text" class="form-control no borde" id="comment" placeholder="comment...">
+                        </div>
+                        <div class="col-xs-1">
+                          <a href="#">
+                            <i class="glyphicon glyphicon-option-vertical">
+                            </i>
+                            </a>
+                          </div>
+                    </div>
+                </article>
+                                <article class="article-one-row">
+                  <header class="theheader">
+                    <h2 class="title_container">Third picture</h2>
+                    <div class="date_container">04.12</div>
+                  </header>
+                  <div class="image_container">
+                      <div style="background-image: url('http://www.phoenixlanding.org/uploads/6/0/0/9/60091737/8723679_orig.jpg');"></div>
+                  </div>
+                  <p class="likes">23 Likes</p>
+                      <div class="row">
+                      <div class="col-xs-1">
+                        <a href="#">
+                          <i class="glyphicon glyphicon-heart-empty"></i>
+                        </a>
+                       </div>
+                        <div class="col-xs-10">
+                          <input type="text" class="form-control no borde" id="comment" placeholder="comment...">
+                        </div>
+                        <div class="col-xs-1">
+                          <a href="#">
+                            <i class="glyphicon glyphicon-option-vertical">
+                            </i>
+                            </a>
+                          </div>
+                    </div>
+                </article>
+                                <article class="article-one-row">
+                  <header class="theheader">
+                    <h2 class="title_container">Third picture</h2>
+                    <div class="date_container">04.12</div>
+                  </header>
+                  <div class="image_container">
+                      <div style="background-image: url('https://fthmb.tqn.com/T-yOEOVKzilRwQAoGjUti4FsJRA=/960x0/filters:no_upscale()/about/close-up-of-scarlet-macaws-perching-on-rock-688089425-588f826a5f9b5874ee2df78d.jpg');"></div>
+                  </div>
+                  <p class="likes">23 Likes</p>
+                      <div class="row">
+                      <div class="col-xs-1">
+                        <a href="#">
+                          <i class="glyphicon glyphicon-heart-empty"></i>
+                        </a>
+                       </div>
+                        <div class="col-xs-10">
+                          <input type="text" class="form-control no borde" id="comment" placeholder="comment...">
+                        </div>
+                        <div class="col-xs-1">
+                          <a href="#">
+                            <i class="glyphicon glyphicon-option-vertical">
+                            </i>
+                            </a>
+                          </div>
+                    </div>
+                </article>
+                                <article class="article-one-row">
+                  <header class="theheader">
+                    <h2 class="title_container">Third picture</h2>
+                    <div class="date_container">04.12</div>
+                  </header>
+                  <div class="image_container">
+                      <div style="background-image: url('https://fthmb.tqn.com/FET5OjBUKGxBgUwTD8H232v6S3g=/2192x1564/filters:no_upscale():fill(transparent,1)/about/GettyImages-136658283-58a6e91f5f9b58a3c918f385.jpg');"></div>
+                  </div>
+                  <p class="likes">23 Likes</p>
+                      <div class="row">
+                      <div class="col-xs-1">
+                        <a href="#">
+                          <i class="glyphicon glyphicon-heart-empty"></i>
+                        </a>
+                       </div>
+                        <div class="col-xs-10">
+                          <input type="text" class="form-control no borde" id="comment" placeholder="comment...">
+                        </div>
+                        <div class="col-xs-1">
+                          <a href="#">
+                            <i class="glyphicon glyphicon-option-vertical">
+                            </i>
+                            </a>
+                          </div>
+                    </div>
+                </article>
+                                <article class="article-one-row">
+                  <header class="theheader">
+                    <h2 class="title_container">Third picture</h2>
+                    <div class="date_container">04.12</div>
+                  </header>
+                  <div class="image_container">
+                      <div style="background-image: url('https://www.parrots.org/images/uploads/dreamstime_C_47716185.jpg');"></div>
+                  </div>
+                  <p class="likes">23 Likes</p>
+                      <div class="row">
+                      <div class="col-xs-1">
+                        <a href="#">
+                          <i class="glyphicon glyphicon-heart-empty"></i>
+                        </a>
+                       </div>
+                        <div class="col-xs-10">
+                          <input type="text" class="form-control no borde" id="comment" placeholder="comment...">
+                        </div>
+                        <div class="col-xs-1">
+                          <a href="#">
+                            <i class="glyphicon glyphicon-option-vertical">
+                            </i>
+                            </a>
+                          </div>
+                    </div>
+                </article>
+                                <article class="article-one-row">
+                  <header class="theheader">
+                    <h2 class="title_container">Third picture</h2>
+                    <div class="date_container">04.12</div>
+                  </header>
+                  <div class="image_container">
+                      <div style="background-image: url('https://fthmb.tqn.com/pMY1duwcuWKnqI_3DFu5sEebnio=/1280x853/filters:fill(auto,1)/about/Blue-Fronted-Amazon-Parrots-169975796-resized-56a0a12a5f9b58eba4b2459e.jpg');"></div>
+                  </div>
+                  <p class="likes">23 Likes</p>
+                      <div class="row">
+                      <div class="col-xs-1">
+                        <a href="#">
+                          <i class="glyphicon glyphicon-heart-empty"></i>
+                        </a>
+                       </div>
+                        <div class="col-xs-10">
+                          <input type="text" class="form-control no borde" id="comment" placeholder="comment...">
+                        </div>
+                        <div class="col-xs-1">
+                          <a href="#">
+                            <i class="glyphicon glyphicon-option-vertical">
+                            </i>
+                            </a>
+                          </div>
+                    </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="three-col">
+            <div class="row">
+                <div class="col-xs-4">
+                  <article>
+                    <div class="image_container">
+                        <div style="background-image: url('https://aos.iacpublishinglabs.com/question/aq/1400px-788px/parrot-s-predators_9be0e73cf7e7b722.jpg?domain=cx.aos.ask.com');"></div>
+                        </div>
+  
+                  </article>
+                </div>
+                <div class="col-xs-4">
+                  <article>
+                    <div class="image_container">
+                        <div style="background-image: url('https://www.pets4homes.co.uk/images/articles/2791/large/cockatoos-the-most-affectionate-parrots-on-the-planet-5536132ba815c.jpg');"></div>
+                    </div>
+                   
+                  </article>
+                </div>
+                <div class="col-xs-4">
+                  <article>
+                    <div class="image_container">
+                        <div style="background-image: url('https://ruthelsesser.files.wordpress.com/2013/02/parrot.jpg');"></div>
+                    </div>
+                    
+                  </article>
+                </div class="col-xs-4">
+            </div>
+            <div class="row">
+                  <div class="col-xs-4">
+                    <article>
+                      <div class="image_container">
+                          <div style="background-image: url('https://fthmb.tqn.com/T-yOEOVKzilRwQAoGjUti4FsJRA=/960x0/filters:no_upscale()/about/close-up-of-scarlet-macaws-perching-on-rock-688089425-588f826a5f9b5874ee2df78d.jpg');"></div>
+                      </div>
+                     
+                    </article>
+                  </div>
+                  <div class="col-xs-4">
+                    <article>
+                      <div class="image_container">
+                          <div style="background-image: url('http://www.phoenixlanding.org/uploads/6/0/0/9/60091737/8723679_orig.jpg');"></div>
+                      </div>
+                     
+                    </article>
+                  </div>
+                  <div class="col-xs-4">
+                    <article>
+                      <div class="image_container">
+                          <div style="background-image: url('https://static1.squarespace.com/static/5605d3b7e4b02efb2673025b/564127e4e4b06f94eb0cba4f/56c49c2420c647ad0bea4a1f/1455726227162/Foster+Parrots+-+Cockatiel.jpg?format=500w');"></div>
+                      </div>
+                     
+                    </article>
+                  </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-4">
+                  <article>
+                    <div class="image_container">
+                        <div style="background-image: url('https://fthmb.tqn.com/FET5OjBUKGxBgUwTD8H232v6S3g=/2192x1564/filters:no_upscale():fill(transparent,1)/about/GettyImages-136658283-58a6e91f5f9b58a3c918f385.jpg');"></div>
+                    </div>
+                   
+                  </article>
+                </div>
+                <div class="col-xs-4">
+                  <article>
+                    <div class="image_container">
+                        <div style="background-image: url('https://www.parrots.org/images/uploads/dreamstime_C_47716185.jpg');"></div>
+                    </div>
+                   
+                  </article>
+                </div>
+                <div class="col-xs-4">
+                  <article>
+                    <div class="image_container">
+                        <div style="background-image: url('https://fthmb.tqn.com/pMY1duwcuWKnqI_3DFu5sEebnio=/1280x853/filters:fill(auto,1)/about/Blue-Fronted-Amazon-Parrots-169975796-resized-56a0a12a5f9b58eba4b2459e.jpg');"></div>
+                    </div>
+                   
+                  </article>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+        </div>
+      <!-- jQuery first, then Tether, then Bootstrap JS. -->
+      <!-- jQuery first, then Tether, then Bootstrap JS. -->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</HTML>
